@@ -1,0 +1,17 @@
+import example.* 
+
+describe "prueba jugador"{
+	var ninbus2001 = new Escoba(salud = 70, fabricacion = 2001)
+
+test "Cazador" {
+var nuevoJugador = new Cazador(skill = 20, peso = 70 , escoba = ninbus2001, equipo = "hola", fuerza = 20, punteria = 10)
+	assert.equals(25,nuevoJugador.habilidad())
+
+}
+
+test "escoba"{
+	
+	assert.equals(44.1, ninbus2001.velocidadEscoba())
+}
+
+}
